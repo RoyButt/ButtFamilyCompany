@@ -14,7 +14,7 @@ const team = [
   { name: "Rehan Butt", role: "CEO & Founder", avatar: "RB", color: "from-blue-500 to-indigo-600" },
   { name: "Dr. Huma Fiaz", role: "Head of Speech Therapy", avatar: "HF", color: "from-purple-500 to-pink-600" },
   { name: "Marjan", role: "CTO Engineer", avatar: "MJ", color: "from-green-500 to-teal-600" },
-  { name: "Farhan Butt", role: "COO", avatar: "FB", color: "from-orange-500 to-red-500" },
+  { name: "Engr. Farhan", role: "COO", avatar: "FB", color: "from-orange-500 to-red-500" },
   { name: "AI Engineer", role: "AI Engineer", avatar: "AI", color: "from-cyan-500 to-blue-600" },
 ];
 
@@ -80,9 +80,9 @@ export default function AboutPage() {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { num: "12K+", label: "Active Learners" },
-                { num: "500+", label: "Expert Tutors" },
-                { num: "200+", label: "Courses" },
+                { num: "100+", label: "Active Learners" },
+                { num: "20+", label: "Expert Courses" },
+                { num: "20+", label: "Courses" },
                 { num: "98%", label: "Satisfaction Rate" },
               ].map((s) => (
                 <div key={s.label} className="bg-gray-50 rounded-2xl p-6 text-center">

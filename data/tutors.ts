@@ -76,7 +76,7 @@ export const tutors: Tutor[] = [
   },
   {
     id: 4,
-    name: "Farhan Butt",
+    name: "Engr.Farhan",
     title: "COO · Programming & Web Development Tutor",
     skills: ["JavaScript", "React", "Node.js", "C++", "Web Dev"],
     rating: 4.95,
