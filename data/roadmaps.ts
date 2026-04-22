@@ -242,4 +242,151 @@ export const roadmaps: CourseRoadmap[] = [
       { week: 3, title: "1-on-1 Tutor Session", topics: ["Portfolio review", "Monetisation tips", "Next steps"], type: "session" },
     ],
   },
+
+  // ── 12. Articulation Therapy ──────────────────────────────────
+  {
+    courseId: 12,
+    totalHours: 30,
+    selfPacedHours: "8–10 hrs of recorded material",
+    tutorSessions: 6,
+    roadmap: [
+      { week: 1, title: "Understanding Articulation", topics: ["What is articulation", "Common speech sound errors", "Age norms for speech sounds", "Assessment basics"], type: "lesson" },
+      { week: 1, title: "Phonetic Placement Techniques", topics: ["How to teach /s/, /r/, /l/, /th/", "Visual & tactile cues", "Mirror work", "Oral motor exercises"], type: "lesson" },
+      { week: 2, title: "Syllable & Word Level Practice", topics: ["Isolation to syllables", "Word-level drills", "Minimal pairs", "Auditory discrimination"], type: "lesson" },
+      { week: 2, title: "Quiz + Practice", topics: ["Articulation quiz", "Record 10 target words", "Parent practice log"], type: "quiz" },
+      { week: 3, title: "Sentence & Conversation Level", topics: ["Carrier phrases", "Structured sentences", "Reading aloud", "Conversational carryover"], type: "lesson" },
+      { week: 3, title: "1-on-1 Tutor Session", topics: ["Review progress", "Troubleshoot errors", "Personalised plan"], type: "session" },
+      { week: 4, title: "Home Practice Strategies", topics: ["Daily practice routines", "Games & activities", "Reinforcement techniques", "Tracking progress"], type: "lesson" },
+      { week: 5, title: "Generalisation & Maintenance", topics: ["Real-world practice", "Self-monitoring", "Fading cues", "Long-term strategies"], type: "lesson" },
+      { week: 6, title: "Final Assessment", topics: ["Pre/post comparison", "Celebrate progress", "Next steps", "Final review"], type: "project" },
+      { week: 6, title: "1-on-1 Tutor Session", topics: ["Final assessment", "Maintenance plan", "Q&A"], type: "session" },
+    ],
+  },
+
+  // ── 13. Stammering & Fluency ──────────────────────────────────
+  {
+    courseId: 13,
+    totalHours: 38,
+    selfPacedHours: "10–12 hrs of recorded material",
+    tutorSessions: 8,
+    roadmap: [
+      { week: 1, title: "Understanding Stammering", topics: ["What is stammering", "Types of disfluencies", "Myths vs facts", "Emotional impact"], type: "lesson" },
+      { week: 1, title: "Fluency Shaping Basics", topics: ["Easy onset", "Light contacts", "Continuous phonation", "Breathing techniques"], type: "lesson" },
+      { week: 2, title: "Stuttering Modification", topics: ["Cancellations", "Pull-outs", "Preparatory sets", "Voluntary stuttering"], type: "lesson" },
+      { week: 2, title: "Quiz + Practice", topics: ["Fluency techniques quiz", "Daily practice log", "Record yourself speaking"], type: "quiz" },
+      { week: 3, title: "Reducing Tension & Anxiety", topics: ["Desensitisation", "Cognitive restructuring", "Mindfulness for fluency", "Fear hierarchy"], type: "lesson" },
+      { week: 3, title: "1-on-1 Tutor Session", topics: ["Review techniques", "Address fears", "Personalised strategies"], type: "session" },
+      { week: 4, title: "Real-World Practice", topics: ["Phone calls", "Ordering food", "Presentations", "Job interviews"], type: "lesson" },
+      { week: 5, title: "Self-Monitoring & Acceptance", topics: ["Tracking fluency", "Self-acceptance", "Disclosure strategies", "Advocacy"], type: "lesson" },
+      { week: 6, title: "Mini Project", topics: ["Give a 3-minute speech", "Record & review", "Tutor feedback"], type: "project" },
+      { week: 7, title: "Maintenance Strategies", topics: ["Long-term practice", "Relapse prevention", "Support groups", "Ongoing resources"], type: "lesson" },
+      { week: 8, title: "Final Review", topics: ["Progress assessment", "Celebrate wins", "Future plan", "Final Q&A"], type: "project" },
+      { week: 8, title: "1-on-1 Tutor Session", topics: ["Final assessment", "Maintenance plan", "Lifelong strategies"], type: "session" },
+    ],
+  },
+
+  // ── 14. Speech & Language Delay ───────────────────────────────
+  {
+    courseId: 14,
+    totalHours: 30,
+    selfPacedHours: "8–10 hrs of recorded material",
+    tutorSessions: 6,
+    roadmap: [
+      { week: 1, title: "Understanding Language Delay", topics: ["Milestones by age", "Red flags", "Receptive vs expressive language", "When to seek help"], type: "lesson" },
+      { week: 1, title: "Building First Words", topics: ["Modelling & expansion", "Parallel talk", "Self-talk", "Repetition strategies"], type: "lesson" },
+      { week: 2, title: "Play-Based Intervention", topics: ["Toy selection", "Turn-taking games", "Imitation activities", "Sabotage & temptation"], type: "lesson" },
+      { week: 2, title: "Quiz + Practice", topics: ["Language delay quiz", "Daily play log", "Video your child playing"], type: "quiz" },
+      { week: 3, title: "Expanding Vocabulary", topics: ["Labelling objects", "Action words", "Descriptive language", "Categories & concepts"], type: "lesson" },
+      { week: 3, title: "1-on-1 Tutor Session", topics: ["Review progress", "Troubleshoot challenges", "Personalised activities"], type: "session" },
+      { week: 4, title: "Sentence Building", topics: ["Two-word combinations", "Sentence expansion", "Grammar basics", "Question forms"], type: "lesson" },
+      { week: 5, title: "Reading & Storytelling", topics: ["Interactive reading", "Asking questions", "Retelling stories", "Print awareness"], type: "lesson" },
+      { week: 6, title: "Final Assessment", topics: ["Pre/post language sample", "Progress review", "Next steps", "Resources"], type: "project" },
+      { week: 6, title: "1-on-1 Tutor Session", topics: ["Final assessment", "Long-term plan", "Q&A"], type: "session" },
+    ],
+  },
+
+  // ── 15. Autism & Communication ────────────────────────────────
+  {
+    courseId: 15,
+    totalHours: 40,
+    selfPacedHours: "12–14 hrs of recorded material",
+    tutorSessions: 8,
+    roadmap: [
+      { week: 1, title: "Understanding Autism & Communication", topics: ["Autism spectrum overview", "Communication profiles", "Sensory considerations", "Strengths-based approach"], type: "lesson" },
+      { week: 1, title: "AAC Basics", topics: ["What is AAC", "Low-tech vs high-tech", "PECS introduction", "Core vocabulary"], type: "lesson" },
+      { week: 2, title: "Building Joint Attention", topics: ["Eye contact alternatives", "Shared focus", "Following gaze", "Pointing & gestures"], type: "lesson" },
+      { week: 2, title: "Quiz + Practice", topics: ["Autism communication quiz", "AAC practice log", "Video interaction"], type: "quiz" },
+      { week: 3, title: "Social Communication Skills", topics: ["Turn-taking", "Greetings & farewells", "Topic maintenance", "Conversation repair"], type: "lesson" },
+      { week: 3, title: "1-on-1 Tutor Session", topics: ["Review strategies", "AAC setup help", "Personalised goals"], type: "session" },
+      { week: 4, title: "Pragmatic Language", topics: ["Understanding context", "Nonverbal cues", "Figurative language", "Social scripts"], type: "lesson" },
+      { week: 5, title: "Emotional Regulation & Communication", topics: ["Identifying emotions", "Requesting breaks", "Self-advocacy", "Calming strategies"], type: "lesson" },
+      { week: 6, title: "Mini Project", topics: ["Create a communication book", "Practice social scenarios", "Tutor review"], type: "project" },
+      { week: 7, title: "School & Community Integration", topics: ["Classroom communication", "Peer interactions", "Community outings", "Generalisation"], type: "lesson" },
+      { week: 8, title: "Final Review", topics: ["Progress assessment", "AAC mastery check", "Future goals", "Resources"], type: "project" },
+      { week: 8, title: "1-on-1 Tutor Session", topics: ["Final assessment", "Long-term support plan", "Q&A"], type: "session" },
+    ],
+  },
+
+  // ── 16. Voice Disorders ───────────────────────────────────────
+  {
+    courseId: 16,
+    totalHours: 28,
+    selfPacedHours: "7–9 hrs of recorded material",
+    tutorSessions: 5,
+    roadmap: [
+      { week: 1, title: "Understanding Voice Disorders", topics: ["Anatomy of voice", "Common voice problems", "Causes (nodules, polyps, strain)", "When to see an ENT"], type: "lesson" },
+      { week: 1, title: "Vocal Hygiene", topics: ["Hydration", "Avoiding irritants", "Rest & recovery", "Lifestyle modifications"], type: "lesson" },
+      { week: 2, title: "Breathing & Support", topics: ["Diaphragmatic breathing", "Breath control", "Posture for voice", "Relaxation techniques"], type: "lesson" },
+      { week: 2, title: "Quiz + Practice", topics: ["Voice health quiz", "Daily hydration log", "Breathing exercises"], type: "quiz" },
+      { week: 3, title: "Resonance & Pitch", topics: ["Forward resonance", "Pitch range exercises", "Eliminating strain", "Vocal warm-ups"], type: "lesson" },
+      { week: 3, title: "1-on-1 Tutor Session", topics: ["Voice assessment", "Personalised exercises", "Troubleshooting"], type: "session" },
+      { week: 4, title: "Vocal Exercises & Therapy", topics: ["Humming", "Lip trills", "Sirens", "Straw phonation"], type: "lesson" },
+      { week: 5, title: "Real-World Application", topics: ["Speaking in meetings", "Teaching voice", "Singing voice", "Long-term maintenance"], type: "lesson" },
+      { week: 5, title: "Final Assessment", topics: ["Pre/post voice recording", "Progress review", "Maintenance plan"], type: "project" },
+      { week: 5, title: "1-on-1 Tutor Session", topics: ["Final review", "Long-term vocal health", "Q&A"], type: "session" },
+    ],
+  },
+
+  // ── 17. Dysarthria ────────────────────────────────────────────
+  {
+    courseId: 17,
+    totalHours: 38,
+    selfPacedHours: "10–12 hrs of recorded material",
+    tutorSessions: 8,
+    roadmap: [
+      { week: 1, title: "Understanding Dysarthria", topics: ["What is dysarthria", "Types (flaccid, spastic, ataxic)", "Causes (stroke, TBI, Parkinson's)", "Speech subsystems affected"], type: "lesson" },
+      { week: 1, title: "Breath Support", topics: ["Diaphragmatic breathing", "Controlled exhalation", "Phrasing", "Loudness control"], type: "lesson" },
+      { week: 2, title: "Articulation Precision", topics: ["Overarticulation", "Slowing rate", "Exaggerated movements", "Consonant clarity"], type: "lesson" },
+      { week: 2, title: "Quiz + Practice", topics: ["Dysarthria quiz", "Daily articulation drills", "Record yourself"], type: "quiz" },
+      { week: 3, title: "Prosody & Intonation", topics: ["Stress patterns", "Pitch variation", "Rhythm exercises", "Natural phrasing"], type: "lesson" },
+      { week: 3, title: "1-on-1 Tutor Session", topics: ["Progress review", "Personalised drills", "Troubleshooting"], type: "session" },
+      { week: 4, title: "Intelligibility Strategies", topics: ["Alphabet supplementation", "Topic cues", "Repair strategies", "Listener training"], type: "lesson" },
+      { week: 5, title: "AAC & Assistive Tech", topics: ["When to use AAC", "Speech-generating devices", "Writing boards", "Hybrid approaches"], type: "lesson" },
+      { week: 6, title: "Mini Project", topics: ["Record a 2-minute speech", "Intelligibility rating", "Tutor feedback"], type: "project" },
+      { week: 7, title: "Functional Communication", topics: ["Phone calls", "Ordering food", "Medical appointments", "Social situations"], type: "lesson" },
+      { week: 8, title: "Final Assessment", topics: ["Pre/post intelligibility test", "Progress review", "Long-term plan"], type: "project" },
+      { week: 8, title: "1-on-1 Tutor Session", topics: ["Final review", "Maintenance strategies", "Resources"], type: "session" },
+    ],
+  },
+
+  // ── 20. Accent Modification ───────────────────────────────────
+  {
+    courseId: 20,
+    totalHours: 32,
+    selfPacedHours: "8–10 hrs of recorded material",
+    tutorSessions: 6,
+    roadmap: [
+      { week: 1, title: "Understanding Accent", topics: ["What is an accent", "Phonetics vs phonology", "Your baseline assessment", "Goal setting"], type: "lesson" },
+      { week: 1, title: "English Vowel Sounds", topics: ["Short vs long vowels", "Diphthongs", "Schwa", "Common errors"], type: "lesson" },
+      { week: 2, title: "English Consonants", topics: ["/th/, /v/, /w/, /r/, /l/", "Final consonants", "Consonant clusters", "Voicing"], type: "lesson" },
+      { week: 2, title: "Quiz + Practice", topics: ["Vowel & consonant quiz", "Minimal pairs practice", "Record 20 words"], type: "quiz" },
+      { week: 3, title: "Stress & Rhythm", topics: ["Word stress patterns", "Sentence stress", "Rhythm & timing", "Weak forms"], type: "lesson" },
+      { week: 3, title: "1-on-1 Tutor Session", topics: ["Pronunciation review", "Personalised drills", "Feedback"], type: "session" },
+      { week: 4, title: "Intonation & Melody", topics: ["Rising vs falling intonation", "Question patterns", "Emphasis", "Natural flow"], type: "lesson" },
+      { week: 5, title: "Real-World Practice", topics: ["Job interviews", "Presentations", "Phone calls", "Small talk"], type: "lesson" },
+      { week: 5, title: "Mini Project", topics: ["Give a 3-minute presentation", "Record & review", "Tutor feedback"], type: "project" },
+      { week: 6, title: "Final Assessment", topics: ["Pre/post recording comparison", "Intelligibility rating", "Next steps"], type: "project" },
+      { week: 6, title: "1-on-1 Tutor Session", topics: ["Final review", "Maintenance plan", "Career tips"], type: "session" },
+    ],
+  },
 ];

@@ -13,7 +13,8 @@ const values = [
 const team = [
   { name: "Rehan Butt", role: "CEO & Founder", avatar: "RB", color: "from-blue-500 to-indigo-600" },
   { name: "Dr. Huma Fiaz", role: "Head of Speech Therapy", avatar: "HF", color: "from-purple-500 to-pink-600" },
-  { name: "Marjan", role: "CTO Engineer", avatar: "MJ", color: "from-green-500 to-teal-600" },
+  { name: "Abdul Saboor", role: "Head of CS Department", avatar: "AS", color: "from-green-500 to-teal-600" },
+  { name: "Marjan", role: "CTO Engineer", avatar: "MJ", color: "from-emerald-500 to-green-600" },
   { name: "Engr. Farhan", role: "COO", avatar: "FB", color: "from-orange-500 to-red-500" },
   { name: "AI Engineer", role: "AI Engineer", avatar: "AI", color: "from-cyan-500 to-blue-600" },
 ];
@@ -131,7 +132,7 @@ export default function AboutPage() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Meet the team</h2>
             <p className="text-gray-500">The people building TechTutors.ai</p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-6 gap-6">
             {team.map((member, i) => (
               <motion.div
                 key={member.name}

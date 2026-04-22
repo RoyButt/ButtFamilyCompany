@@ -96,7 +96,7 @@ export default function SpeechTherapyChildrenPage() {
           >
             Speech & Language Therapy
             <span className="block bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
-              for Children
+              for All Ages
             </span>
           </motion.h1>
 
@@ -104,10 +104,24 @@ export default function SpeechTherapyChildrenPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed"
+            className="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed"
           >
-            Expert-led therapy and parent education programmes designed to help your child find their voice — from first words to confident communication.
+            From a child's first words to an adult's professional voice — expert-led therapy and education programmes that transform communication at every stage of life.
           </motion.p>
+
+          {/* Specialisms strip */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="flex flex-wrap justify-center gap-2 mb-8"
+          >
+            {["Articulation","Stammering","Speech & Language Delay","Autism","Voice Disorders","Dysarthria","Accent Modification"].map((s) => (
+              <span key={s} className="bg-white border border-pink-200 text-pink-700 text-xs font-semibold px-3 py-1.5 rounded-full shadow-sm">
+                {s}
+              </span>
+            ))}
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -139,8 +153,29 @@ export default function SpeechTherapyChildrenPage() {
             transition={{ delay: 0.5 }}
             className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-gray-500"
           >
-            {["✅ Licensed SLPs", "✅ Online Sessions", "✅ Parent-Inclusive", "✅ Evidence-Based"].map((b) => (
+            {["✅ Licensed SLPs", "✅ Online Sessions", "✅ Children & Adults", "✅ Evidence-Based"].map((b) => (
               <span key={b} className="font-medium">{b}</span>
+            ))}
+          </motion.div>
+
+          {/* Age groups */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 max-w-3xl mx-auto"
+          >
+            {[
+              { icon: "👶", label: "Toddlers", sub: "1–3 years" },
+              { icon: "🧒", label: "Children", sub: "4–12 years" },
+              { icon: "🧑", label: "Teens", sub: "13–18 years" },
+              { icon: "👨‍💼", label: "Adults", sub: "All ages" },
+            ].map((g) => (
+              <div key={g.label} className="bg-white/80 backdrop-blur-sm border border-pink-100 rounded-2xl p-4 text-center">
+                <div className="text-2xl mb-1">{g.icon}</div>
+                <div className="text-sm font-bold text-gray-900">{g.label}</div>
+                <div className="text-xs text-gray-400">{g.sub}</div>
+              </div>
             ))}
           </motion.div>
         </div>
@@ -158,13 +193,13 @@ export default function SpeechTherapyChildrenPage() {
             >
               <span className="text-xs font-bold text-pink-600 uppercase tracking-widest mb-3 block">Why It Matters</span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-5 leading-tight">
-                Early intervention changes everything
+                Communication changes everything — at any age
               </h2>
               <p className="text-gray-500 leading-relaxed mb-5">
-                The first five years of life are the most critical window for speech and language development. Children who receive early support are significantly more likely to develop strong communication, literacy, and social skills.
+                Whether it's a toddler saying their first words, a child struggling in school, a teenager who stammers, or an adult wanting to speak more clearly at work — the right therapy at the right time makes a life-changing difference.
               </p>
               <p className="text-gray-500 leading-relaxed mb-8">
-                At TechTutors.ai, our licensed Speech-Language Pathologists work directly with children — and with you as a parent — so progress continues at home, not just in sessions.
+                Dr. Huma Fiaz is a Government of Punjab licensed Speech-Language Pathologist with 10+ years of clinical experience treating children, teens, and adults. She works with you — not just the patient — so progress happens every day, not just in sessions.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -306,7 +341,7 @@ export default function SpeechTherapyChildrenPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {[
-              { name: "Dr. Huma Fiaz", title: "Head of Speech Therapy · 15 yrs experience · Govt. of Punjab Licensed", avatar: "HF", color: "from-pink-500 to-rose-600", spec: "Articulation · Fluency · Early Intervention · Govt. Employee" },
+              { name: "Dr. Huma Fiaz", title: "Head of Speech Therapy · Govt. of Punjab Licensed · 10+ yrs", avatar: "HF", color: "from-pink-500 to-rose-600", spec: "Articulation · Stammering · Language Delay · Autism · Voice · Dysarthria · Accent Modification" },
               { name: "Dr. Elena Rossi", title: "Fluency & Voice Specialist · 10 yrs experience", avatar: "ER", color: "from-purple-500 to-violet-600", spec: "Stuttering · AAC · Autism Support" },
             ].map((t) => (
               <div key={t.name} className="bg-white rounded-2xl p-6 border border-pink-100 text-left flex items-start gap-4">
