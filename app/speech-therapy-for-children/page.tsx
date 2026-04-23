@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { courses } from "@/data/courses";
 
 const speechCourses = courses.filter((c) => c.category === "Speech Therapy");
@@ -200,8 +201,7 @@ export default function SpeechTherapyChildrenPage() {
               </p>
               <p className="text-gray-500 leading-relaxed mb-8">
                 Dr. Huma Fiaz is a Government of Punjab licensed Speech-Language Pathologist with 10+ years of clinical experience treating children, teens, and adults. She works with you — not just the patient — so progress happens every day, not just in sessions.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
+              </p>              <div className="grid grid-cols-2 gap-4">
                 {[
                   { num: "92%", label: "of parents report improvement within 8 weeks" },
                   { num: "500+", label: "children supported on our platform" },
@@ -221,22 +221,41 @@ export default function SpeechTherapyChildrenPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-8 border border-pink-100"
+              className="flex flex-col gap-6"
             >
-              <h3 className="font-bold text-gray-900 text-lg mb-6">Signs your child may benefit from speech therapy</h3>
-              <div className="space-y-4">
-                {signs.map((s, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <span className="bg-pink-100 text-pink-700 text-xs font-bold px-2.5 py-1 rounded-lg flex-shrink-0 mt-0.5">
-                      {s.age}
-                    </span>
-                    <p className="text-sm text-gray-600 leading-relaxed">{s.sign}</p>
-                  </div>
-                ))}
+              {/* The image */}
+              <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl shadow-pink-200/50 border border-pink-100">
+                <Image
+                  src="/Image2.png"
+                  alt="Speech therapy session — Dr. Huma Fiaz with a patient"
+                  width={600}
+                  height={420}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent px-5 py-4">
+                  <p className="text-white text-sm font-semibold">Dr. Huma Fiaz</p>
+                  <p className="text-white/70 text-xs">Licensed Speech-Language Pathologist · Govt. of Punjab</p>
+                </div>
               </div>
-              <p className="text-xs text-gray-400 mt-6 italic">
-                Not sure? Book a free 15-minute consultation with one of our SLPs.
-              </p>
+
+              {/* Signs card */}
+              <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-6 border border-pink-100">
+                <h3 className="font-bold text-gray-900 text-base mb-4">Signs someone may benefit from speech therapy</h3>
+                <div className="space-y-3">
+                  {signs.map((s, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <span className="bg-pink-100 text-pink-700 text-xs font-bold px-2.5 py-1 rounded-lg flex-shrink-0 mt-0.5">
+                        {s.age}
+                      </span>
+                      <p className="text-sm text-gray-600 leading-relaxed">{s.sign}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-xs text-gray-400 mt-4 italic">
+                  Not sure? Book a free 15-minute consultation with Dr. Huma.
+                </p>
+              </div>
             </motion.div>
           </div>
         </div>
